@@ -15,3 +15,4 @@
 ## display: inline-block
 - Behaves like an inline element
 - But **customised width/height** is allowed
+- Example: <img> tag
