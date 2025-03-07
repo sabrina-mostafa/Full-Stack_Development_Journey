@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --primary-color: brown ;
+            --custom-width: 330px ;
+        }
+
+        .container {
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+
+            /* box-shadow: 20px -30px brown; */
+            /* box-shadow: 20px -30px 10px brown; */
+
+            box-shadow: 20px -30px 10px 50px var(--primary-color);
+        /* box-shadow: X-axis Y-axis blur spread color  */
+
+            /* box-shadow: inset 20px -30px brown; */
+
+            /* box-shadow: 20px -30px brown, 30px 30px blue; */
+        }
+        #head1 {
+            text-shadow: 2px 2px red, 12px 12px green, 25px 25px blue;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="logo.png" alt="logo_pic">
+            <h2 id="head1">Welcome to my website</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates iure facere cum nesciunt reiciendis! Assumenda nisi accusantium asperiores odit alias.</p>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>
