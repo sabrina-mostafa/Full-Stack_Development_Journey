@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box1, .box2 {
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 3px solid yellow ;
+            border-radius: 10px;
+            margin: 10px;
+
+            position: relative;
+
+        }
+
+        .box1 {
+            /* animation-name: rightMovement;
+            animation-duration: 3s;
+            animation-timing-function: cubic-bezier(0.1, 0.7, 0.1, 0.1);
+            animation-delay: -1;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-play-state: running; */
+
+
+            /* @keyframes name | duration | easing-function | delay | iteration-count | direction | fill-mode | play-state */
+            animation: rightMovement 3s cubic-bezier(0.1, 0.7, 0.1, 0.1) 1s infinite alternate both running;
+        }
+        .box2 {
+            animation: leftMovement 3s cubic-bezier(0.1, 0.7, 0.1, 0.1) 1s infinite alternate both running;
+
+        }
+
+        @keyframes rightMovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 1550px;
+
+            }
+        }
+        @keyframes leftMovement {
+            from {
+                top: 700px;
+                left: 1550px;
+            }
+
+            to {
+                top: 700px;
+                left: 0;
+
+            }
+        }
+
+        #circle {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 3px solid yellow ;
+            border-radius: 50px;
+            margin: 10px;
+
+            position: relative;
+            top: 22%;
+            left: 50%;
+
+            animation: circleMovement 3s cubic-bezier(0.1, 0.7, 0.1, 0.1) 1s infinite alternate both running;
+        }
+        @keyframes circleMovement {
+            0% {
+                top: 1%;
+                left: 5%;
+            }
+            25% {
+                top: 62%;
+                left: 5%;
+            }
+            50% {
+                top: 1%;
+                left: 90%;
+            }
+            75% {
+                top: 62%;
+                left: 90%;
+            }
+            100% {
+                top: 1%;
+                left: 5%;
+            }
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+
+        </div>
+
+        <div id="circle">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
