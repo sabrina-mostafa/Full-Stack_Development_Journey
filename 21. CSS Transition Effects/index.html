@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            height: 400px;
+            width: 400px;
+            background-color: beige;
+            border: 2px solid black;
+
+            /* transition-property: width ; */
+            /* transition-property: all;
+
+            transition-duration: 4s;
+            transition-delay: 1s;
+            transition-timing-function: linear; */
+
+            /* shorthand */
+            /* transition: property | duration | delay | timing-function */
+            /* transition: all 4s 1s linear ; */
+
+            /* multiple property */
+            transition: width 2s, height 5s;
+        }
+
+        /* hover is a pseudo-class */
+        .box:hover {
+            width: 800px;
+            height: 700px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+    </div>
+    
+</body>
+</html>
