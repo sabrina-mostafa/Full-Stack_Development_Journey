@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            background-color: antiquewhite;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .item {
+            padding: 2rem;
+            height: 150px;
+            width: 150px;
+            background-color: rgb(64, 64, 185);
+            border: 2px solid black;
+            /* transform-style: preserve-3d; */
+        }
+
+        .rx:hover {
+            transform: rotateX(45deg);
+        }
+        .ry:hover {
+            transform: rotateY(-45deg);
+        }
+        .rz:hover {
+            transform: rotateZ(45deg);
+        }
+        .tx:hover {
+            transform: TranslateX(100px);
+        }
+        .ty:hover {
+            transform: TranslateY(100px);
+        }
+        .tz:hover {
+            transform: perspective(300px) TranslateZ(-100px);
+        }
+        .sx:hover {
+            transform: ScaleX(1.5);
+        }
+        .sy:hover {
+            transform: ScaleY(1.5);
+        }
+        .sz:hover {
+            transform: perspective(300px) scaleZ(5) rotateY(30deg) ;
+            /* perspective scaleZ rotate */
+            /* must maintain this order */
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <div class="item rx">RotateX</div>
+        <div class="item ry">RotateY</div>
+        <div class="item rz">RotateZ</div>
+        <div class="item tx">TranslateX</div>
+        <div class="item ty">TranslateY</div>
+        <div class="item tz">TranslateZ</div>
+        <div class="item sx">ScaleX</div>
+        <div class="item sy">ScaleY</div>
+        <div class="item sz">ScaleZ</div>
+    </div>
+
+</body>
+
+</html>
