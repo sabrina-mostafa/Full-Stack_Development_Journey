@@ -28,6 +28,9 @@
   - Null
   - undefined
  - Non-Primitive
+  - Arrays
+  - Objects
+  - Functions
 
 
 
