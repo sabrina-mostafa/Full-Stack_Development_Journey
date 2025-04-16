@@ -17,11 +17,11 @@
 
 ### XOR(^)
 - same bit, output=>0
- - 0^0 = 0
- - 1^1 = 0
+  - 0^0 = 0
+  - 1^1 = 0
 - different bit, output=>1
- - 0^1 = 1
- - 1^0 = 1
+  - 0^1 = 1
+  - 1^0 = 1
 
 ### leftShift (<<)
 - leftShift(<<) == (*=2)
@@ -32,15 +32,15 @@
 
 ## Ternary Operator
 - Syntax
- - (Condition) ? value1 : value2
+  - (Condition) ? value1 : value2
 
 ## Logical Operator:
 - Falsey
- - false
- - 0
- - Undefined
- - Null
- - NaN (not a number)
- - ""
+  - false
+  - 0
+  - Undefined
+  - Null
+  - NaN (not a number)
+  - ""
 - Truthy
- - anything which is not falsey
+  - anything which is not falsey
