@@ -1,5 +1,6 @@
 ## Hoisting:
-        Hoisting is JavaScript's default behavior of moving function declarations and variable declarations to the top of their scope before code execution.
+        Hoisting is JavaScript's default behavior of moving function declarations and variable declarations to the top of their 
+        scope before code execution.
 - It acts on **only 2**:
   - **var** declaration
   - **function** declaration (not on fn expression or arrow fn)
@@ -24,3 +25,7 @@
   - store func in data structure(like Array)
   - assign to a variable
   - use as a property of an object
+
+## Temporal Dead Zone(TDZ)
+        Accessing a let or const variable will throw a ReferenceError if we try to access them before initializing,
+        and from the 1st line to the line before of the variable initiatization is called TDZ.

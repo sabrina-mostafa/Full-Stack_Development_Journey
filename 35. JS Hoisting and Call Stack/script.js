@@ -68,3 +68,8 @@ let obj = {
 };
 obj.greet();
 console.log(obj.wt);
+
+//TDZ from line73 to line74
+console.log(age);
+let age=10;
+console.log(age);
