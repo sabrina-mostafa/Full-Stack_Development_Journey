@@ -20,4 +20,4 @@
 
 ### Default Parameter Function
 - uses default value when there is no value passed to the parameters
-- if the passed value is undefined the it will show the default value instead of the **passed value: undefined**
+- if the passed value is undefined then it will show the default value instead of the **passed value: undefined**
