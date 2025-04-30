@@ -9,11 +9,13 @@
   - Since JavaScript is single-threaded (it runs one task at a time), long or heavy synchronous tasks can block. so JS event loop handles blocking by handling Asynchronous code.
 
 ### Synchronous Code (Blocking)
+- follows a sequence (one after another)
 - Synchronous means:
   - JavaScript runs one task at a time → **each line waits for the previous one to finish**.
   - Everything happens in order, **runs instantly**.
 
 ### Asynchronous Code (Non-blocking)
+- doesn't follow the sequence
 - Asynchronous means:
   - Some tasks **start now and finish later**, allowing other code to run in the meantime.
   - JS uses things like:
